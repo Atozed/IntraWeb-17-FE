@@ -1,0 +1,22 @@
+ACORN 1.0 IWML 1.0
+Vue.Index
+  SimpleStack
+    Header 2|Vue Comparison Demo
+    gap
+    GridLayout
+      Cols: auto 1fr
+      SimpleStack:Menu
+        Width: 200
+      SimpleStack:RightStack
+        Width: 500
+        SimpleStack:VueStack
+          Collapsed: true
+          Text:VueLinkText Compare it to the Vue demo this was cloned from—Vue mixes logic with markup, IntraWeb 17 separates them for sanity.
+          Link:VueLink
+            NewWindow: true
+          Text [b:Note:] If you’re in VS Code with “Break on Caught Exceptions” on, opening Vue links will make the debugger freak out. Smash F5 a few times or turn that feature off and let it chill.
+            Color: red
+            Font.Size: 0.8em
+        IFrame:DemoSpace
+          Height: calc(100vh - 200px)
+          Width: 480

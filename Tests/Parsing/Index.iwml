@@ -1,0 +1,42 @@
+ACORN 1.0 IWML 1.0
+Tests.Parsing.Index
+  Data[]
+    Data:Vendors
+      Text:
+        [{"ID":1, "Name":"Amazoon"},
+        {"ID":2, "Name":"eCray"},
+        {"ID":3, "Name":"Home Despot"}]
+  Test: true
+  SimpleStack
+    Header 3|Parsing
+    Edit:Edit1
+      Text: One
+    Edit:Edit2
+      Text:  Two
+    Edit:Edit3
+      Text:  Three 
+    EditMulti:EditMulti3
+      FixedWidthFont: true
+      Height: 150
+      Text:
+         One
+        Two
+        Three
+    EditMulti:EditMulti1
+      FixedWidthFont: true
+      Height: 150
+      Text:
+        One
+         Two
+          Three
+         Four
+    EditMulti:EditMulti2
+      FixedWidthFont: true
+      Height: 150
+      Text:
+        One
+
+        Two
+        
+        Three
+    Text End

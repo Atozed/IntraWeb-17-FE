@@ -1,0 +1,9 @@
+ACORN 1.0 IWML 1.0
+StorageDemo.Index
+  Title: Local Storage
+  SimpleStack
+    Header 2|Local Storage
+    Text Enter your name and press Save. Reload the page and it will remember you.
+    Edit:NameEdit =this._Name
+    Button:SaveButton Save
+    Text =this._Msg

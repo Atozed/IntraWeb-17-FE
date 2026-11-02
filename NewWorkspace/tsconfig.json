@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "ignoreDeprecations": "6.0",
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+
+    "target": "es2022",
+    "strictNullChecks": false,
+    "strict": true
+  },
+
+  "include": [ "**/*.ts" ]
+}

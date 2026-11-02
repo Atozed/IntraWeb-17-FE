@@ -1,0 +1,55 @@
+ACORN 1.0 IWML 1.0
+Vue.GUIs.CircleDrawer.Index
+  Styles[]
+    CSS
+      Text: body { overflow: hidden; }
+  Div
+    Style:
+      position: fixed;
+      top: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    Button:UndoButton Undo
+      Width: 60
+    Button:RedoButton Redo
+      Width: 60
+      Style: margin-left: 6px;
+  SVG:SVG
+    Width: 100%
+    Height: 100vh
+    Background.Color: #eee
+    Style: overflow: hidden;
+  Div:Background
+    Para
+      Text
+        Color: #bbb
+        Text:
+          Click on the canvas to draw a circle.
+          Click on a circle to select it.
+          Right-click on the canvas to adjust the radius of the selected circle.
+    Style:
+      text-align: center;
+      padding: 0 50px;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+  Div:AdjustDialog
+    Visible: false
+    Width: 350
+    Height: 100
+    Style:
+      position: fixed;
+      top: calc(50% - 50px);
+      left: calc(50% - 175px);
+      background: #fff;
+      padding: 5px 20px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    Para
+      Text Adjust radius of circle at [=this.SelectedPos]
+    Slider:RadiusSlider
+      Min: 1
+      Max: 300

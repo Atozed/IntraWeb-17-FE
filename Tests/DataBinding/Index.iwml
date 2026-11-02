@@ -1,0 +1,23 @@
+ACORN 1.0 IWML 1.0
+Tests.DataBinding.Index
+  Test: true
+  Data[]
+    Data:Users https://jsonplaceholder.typicode.com/users
+  Header:Header 3|DataBinding
+  SimpleStack
+    Text =fn.Concat('Hello', 'World')
+      Tag: HelloWorld
+    Text =fn.AddTest('Hello')
+      Tag: HelloTest
+    Text =fn.Add1(1)
+      Tag: 2
+    Text =fn.Test22()
+      Tag: 22
+    Text =this.MagicNo
+      Tag: 42
+    Text =data.Users.name
+      Tag: Leanne Graham
+    Text =.Users.username
+      Tag: Bret
+    Text =.Users.email
+      Tag: Sincere@april.biz

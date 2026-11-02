@@ -1,0 +1,44 @@
+ACORN 1.0 IWML 1.0
+Features.Controls.List.Index
+  SimpleStack
+    Header 2|List Demo
+
+    gap
+    Header 3|Simple List
+    TextList
+      Items:
+        One
+        Two
+        Markdown [b:Bold]
+        [html]HTML <strong>Bold</strong>
+
+    Header 3|Simple List (Markdown Off)
+    TextList
+      UseMarkdown: false
+      Items:
+        One
+        Two
+        [b:Bold]
+        HTML <strong>Bold</strong>
+
+    Header 3|Simple List (Reversed)
+    TextList abc
+      Reversed: true
+      Items:
+        One
+        Two
+        Three
+
+    Button:Button1 Refresh
+    Header 3|List with LIVE Objects
+    Text Check out the code to see the power of this list. 
+    TextList
+      Reversed: true
+      Items: =this.ObjectList
+
+    Header 3|List
+    Text This list contains a list of controls. You can also use layouts for items.
+    List
+      Text:TextItem Some simple Text
+      Link Atozed|https://Atozed.com/
+        NewWindow: true

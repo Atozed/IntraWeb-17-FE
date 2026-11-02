@@ -1,0 +1,16 @@
+ACORN 1.0 IWML 1.0
+Features.Opener
+  SimpleStack
+    Header 2|Welcome
+    Text
+      Text:
+        Welcome to the Features Demo. We know it is not much to look at. That is on purpose. We didn't want to
+        distract you with glossy pixels and fancy gradients like an Instagram influencer showing off lunch.
+
+        This demo shows how features work, one at a time, without burying you in the multiple features of a real app.
+        When you finish here, check the Tutorial demo for step by step guidance, or the other demos to see how
+        parts work together.
+        
+        Want pretty? Sure, you can even make things pretty with Bootstrap or other templates.
+    Header 3|Towel packed? Good. The Guide approves
+    Text Click on a link on the left sidebar to get started.

@@ -1,0 +1,41 @@
+ACORN 1.0 IWML 1.0
+Vue.Basic.FormBindings.Index
+  Header 2|Text Input
+  Edit =this.Text
+  Para
+    Text =this.Text
+  Header 2|Checkbox
+  Checkbox:Checkbox1
+    Text: Checked: [=this.Checked]
+    Checked: =this.Checked
+  Header 2|Multi Checkbox
+  Checkbox:JackCB Jack
+  Checkbox:JohnCB John
+  Checkbox:MikeCB Mike
+  Para
+    Text Checked names: [=this.CheckedNamesList]
+  Header 2|Radio
+  RadioGroup =this.Picked
+      Radio One|One
+      Radio Two|Two
+  Para
+    Text Picked: [=this.Picked]
+  Header 2|Select
+  ListBox
+    Placeholder: Please select one
+    Text: =this.SelectItem
+    Items:
+      A
+      B
+      C
+  Para
+    Text Selected: [=this.SelectItem]
+  Header 2|Multi Select
+  ListBoxMulti:Multi1
+    Width: 100px
+    Items:
+      A
+      B
+      C
+  Para
+    Text Selected: [=this.MultiSelectItems]

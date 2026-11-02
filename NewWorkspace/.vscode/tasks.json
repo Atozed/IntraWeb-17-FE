@@ -1,0 +1,128 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        // Compile TypeScript
+        {
+            "label": "typescript",
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "problemMatcher": ["$tsc"],
+            "group": "build"
+        },
+        // Build server-side TypeScript
+        {
+            "label": "build-server",
+            "type": "shell",
+            "command": "npx tsc --project ${workspaceFolder}/tsconfig-server.json",
+            "group": "build",
+            "problemMatcher": ["$tsc"]
+        },
+        {
+            "label": "build-client",
+            "type": "shell",
+            "command": "npx tsc --project ${workspaceFolder}/tsconfig.json",
+            "group": "build",
+            "problemMatcher": ["$tsc"]
+        },
+        // Default build task (Ctrl+Shift+B)
+        {
+            "label": "build",
+            "dependsOn": ["typescript", "ensure-server"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        // Start development server
+        {
+            "label": "start-server",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-File", "${workspaceFolder}/.vscode/Scripts/StartServer.ps1"],
+            "dependsOn": ["build-server", "build-client"],
+            "dependsOrder": "sequence",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true
+            }
+        },
+        // Generate redirect.html with dynamic port
+        {
+            "label": "generate-redirect",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-File", "${workspaceFolder}/.vscode/Scripts/GenerateRedirect.ps1"],
+            "dependsOn": ["start-server"],
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true
+            }
+        },
+        {
+            "label": "start-and-generate",
+            "dependsOn": ["start-server", "generate-redirect"],
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": []
+        },
+        // Launch Demo17 Delphi application
+        {
+            "label": "demo17",
+            "type": "process",
+            "command": "${workspaceFolder}/AppsDelphi/Demo17/Win32/Debug/Demo17.exe",
+            "options": {
+                "cwd": "${workspaceFolder}/AppsDelphi/Demo17/Win32/Debug/"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        // Build and launch Demo17
+        {
+            "label": "build demo17",
+            "dependsOn": ["typescript", "demo17"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        // Designer with Electron
+        {
+            "label": "tsc: build - electron",
+            "type": "shell",
+            "command": "npx tsc --project ${workspaceFolder}/tsconfig-electron.json",
+            "problemMatcher": ["$tsc"],
+            "group": "build"
+        },
+        {
+            "label": "tsc: build - run",
+            "type": "shell",
+            "command": "npx tsc --project ${workspaceFolder}/tsconfig.json",
+            "problemMatcher": ["$tsc"],
+            "group": "build"
+        },
+        {
+            "label": "tsc: build - multiple configs",
+            "dependsOn": ["tsc: build - electron", "tsc: build - run"],
+            "dependsOrder": "sequence",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build"
+            }
+        },
+        {
+            "label": "ensure-server",
+            "type": "process",
+            "command": "${command:intraweb.EnsureServer}",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+ACORN 1.0 IWML 1.0
+Vue.GUIs.CRUD.Index
+  Styles[]
+    CSS
+      Text:
+        * { font-size: inherit; }
+        input { Visibility: block; margin-bottom: 10px; }
+        select { float: left; margin: 0 1em 1em 0; width: 14em; }
+        .buttons { clear: both; }
+        button + button { margin-left: 5px; }
+  Div
+    Edit:FilterEdit
+      Placeholder: Filter prefix
+  ListBox:NamesListBox
+    Items: =this.FilteredNames
+    RowCount: 5
+  Label
+    Text Name:
+    Edit:NameEdit
+  Label
+    Text Surame:
+    Edit:SurnameEdit
+  Div
+    Class: buttons
+    Button:CreateButton Create
+    Button:UpdateButton Update
+    Button:DeleteButton Delete

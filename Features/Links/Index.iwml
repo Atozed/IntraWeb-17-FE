@@ -1,0 +1,15 @@
+ACORN 1.0 IWML 1.0
+Features.Links.Index
+  SimpleStack
+    Header 2|Links Index
+    Text
+      Text:
+        I’m a standalone IntraWeb page, living free and linkable like any regular HTML page. IWML files can also be summoned
+        with an HTML link and a ? parameter, but if you want a minimalized link you give each IWML file its own .html buddy.
+        Sure, each IWML file can still have code behind it, but forget about the fancy shared IntraWeb 17 state magic.
+        You’re back in caveman times with plain old JavaScript integration. So grab your local state, cookies, and parameters,
+        because without IntraWeb’s built-in brain, you’re going to be managing your own memory like it’s 1999.
+    gap
+    Link Page2 via HTML|Page2.html
+    Link Page2 via Param|Index.html?Page2
+    Link Page3|Page3.html      

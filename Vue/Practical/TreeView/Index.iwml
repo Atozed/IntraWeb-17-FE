@@ -1,0 +1,21 @@
+ACORN 1.0 IWML 1.0
+Vue.Practical.TreeView.Index
+  TreeList:Tree1
+    Cursor: Pointer
+    Items:
+      My Tree
+        hello
+        world
+        child folder
+          child folder
+            hello
+            world
+            +
+          hello
+          world
+          child folder
+            hello
+            world
+            +
+          +
+        +

@@ -1,0 +1,76 @@
+ACORN 1.0 IWML 1.0
+Features.Controls.Text.Index
+  SimpleStack
+    Header 2|Text Demo
+    Text This demo shows the basic funcitonality of the Text control.
+    Text The text control can be used to easily diplsay formatted text.
+    gap
+
+    Header 3|Plain Text
+    Text Plain Text
+    gap
+
+    Header 3|Formatted Text
+    Text Properties. Affects entire text.
+
+    Text Font.Bold: True
+    Text Bold Text
+      Font.Bold: true
+    gap
+
+    Text .Color: red
+    Text Red Text
+      Color: red
+    gap
+
+    Text .Color: red, Font.Bold: true
+    Text Bold Red Text
+      Font.Bold: true
+      Color: red
+    gap
+
+    Text Using Markdown. Allows a specific selection to be styled. For more informoation on Markdown, see the Markdown demo.
+    Text [off][b:Bold] Text
+    Text [b:Bold] Text
+    gap
+
+    Text Using HTML.
+    Text [off]<strong>Bold</strong> Text
+    Text [html]<strong>Bold</strong> Text
+    gap
+
+    Text For complete low level control, you can also use the Span control instead.
+    Text [off]<strong>Bold</strong> Text
+    HTML.Span <strong>Bold</strong> Text
+    gap
+
+    Text HTML.Span using Style property
+    HTML.Span Bold Text
+      Style: font-weight: bold;
+    gap
+
+    Header 3|MultiLine Text
+    Text Various ways to handle multi line text.
+    gap
+
+    Header 4|Hard EOLs
+    Text
+      Text:
+        JavaScript wakes up, decides your type at runtime.
+        You gave a number, now it thinks it’s a string, fine.
+        Undefined shows up like an uninvited guest.
+        Null sits quiet, still fails every test.
+        You debug for hours, turns out, missing semicolon, best.
+    gap
+
+    Header 4|Embedded EOLs
+    Text JavaScript wakes up, decides your type at runtime.[EOL]You gave a number, now it thinks it’s a string, fine.[EOL]Undefined shows up like an uninvited guest.[EOL]Null sits quiet, still fails every test.[EOL]You debug for hours, turns out, missing semicolon, best.
+    gap
+
+    Header 4|Individual Text controls.
+    Text JavaScript wakes up, decides your type at runtime.
+    Text You gave a number, now it thinks it’s a string, fine.
+    Text Undefined shows up like an uninvited guest.
+    Text Null sits quiet, still fails every test.
+    Text You debug for hours, turns out, missing semicolon, best.
+    gap

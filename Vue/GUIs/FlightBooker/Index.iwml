@@ -1,0 +1,25 @@
+ACORN 1.0 IWML 1.0
+Vue.GUIs.FlightBooker.Index
+  Styles[]
+    CSS
+      Text:
+        select, input, button {
+          Visibility: block;
+          margin: 0.5em 0;
+          font-size: 15px;
+        }
+        input[disabled] { color: #999; }
+        p { color: red; }
+  ListBox:FlightType
+    Index: 0
+    RowCount: 1
+    Items:
+      One-way Flight
+      Return Flight
+    Values:
+      OneWay
+      Return
+  EditDateTime:Date1 =this.BeginDate
+  EditDateTime:Date2 =this.EndDate
+  Button:BookButton Book
+  Text:ReturnText Return date must be after departure date.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!-- 
+This is the boilerplate launcher for an IntraWeb app. Deploy it as-is, 
+or tweak away—just don’t kick out the load-bearing code or everything
+collapses like Jenga in an earthquake.
+
+If you want a more minimalistic approach, use IndexMin.html (deploy as Index.html)
+or just create a totally empty HTML file with an empty head and body and
+add this single line inside the head section:
+  <script src="/IW17/IntraWeb/IntraWeb.js" defer></script>
+Of course if you do this, you lose error handling, the cool load screen,
+and opt for a total lack of humor.
+* If you are using Boostrap, you will still need the Bootstrap header below.
+-->
+
+<!-- html really wants a lang attrib, so we default to en,
+  but you should change it to match your language if is not English. -->
+<html lang="en">
+<head>
+  <title>IntraWeb</title>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+
+  <!-- Default CSS to make things look slightly more modern. IntraWeb doesn’t depend on any of this
+    lipstick. Delete it if you miss the 1990s and dial-up tones, or tweak it if you think Comic Sans
+    deserves a comeback. -->
+  <link rel="stylesheet" href="Index.css">
+
+  <!-- Bootstrap needs this line. If you dont use Bootstrap, 
+   it’s harmless clutter, like a pickle slice on the plate. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    // Set a version to enable caching.
+    // Leave empty to work around Chrome bugs,
+    // which forces a full reload every time. Thanks, Chrome.
+    const xVersion = '';
+    // Feel free to modify these for your app to look brilliant while it loads.
+    const xAppName = 'IntraWeb';
+    const xMessages = [
+      'web development done right', 'serious code, less chaos', 'a web framework that behaves', 'less hacks, more progress',
+      'fewer bugs, faster ships', 'framework calm, developer calm', 'structure beats spaghetti', 'runtime without drama'
+    ];
+
+    function LoadGreatness(aPath, aAltPath) {
+      const s = document.createElement('script');
+      s.src = aPath;
+      
+      // These lines are required for IntraWeb backend tools (Delphi, etc). 
+      // Change them and the backend breaks.
+      //
+      // Frontend only? They’re optional, like semicolons in JavaScript,
+      // Useful when Index.iwml isn’t used and you’d rather set it here than in the URL.
+      s.dataset.AllowDocParams = 'true';
+      s.dataset.Source = '*';
+
+      // Be sure to update .onerror if you make breaking changes to the body,
+      // or remove it entirely if you prefer sweeping failures under the rug.
+      s.onerror = () => { 
+        if (aAltPath != undefined) {
+          LoadGreatness(aAltPath);
+        } else {
+          const el = document.getElementById('iw-message');
+          el.style.color = 'red';
+          el.textContent = 'Error: IntraWeb failed to load. Expecting miracles, got JavaScript.';
+        }
+      };
+      document.head.appendChild(s);
+    }
+
+    document.title = xAppName;
+    // IntraWeb.js must load in DOMContentLoaded (or at least after the DOM is ready), 
+    // unless you enjoy guaranteed breakage. 
+    document.addEventListener('DOMContentLoaded', () => { 
+      // IntraWebMega.js is runtime deployment,
+      let xMega = 'IntraWebMega' + xVersion + '.js';
+      if (!xVersion) xMega += '?' + crypto.randomUUID();
+      // IntraWeb.js is during debugging.
+      // You can change when deploying to a CDN or shared area.
+      // During development, do not change unless you’re ready for Debugger: Civil War.
+      LoadGreatness(xMega, '/IW17/IntraWeb/IntraWeb.js');
+    });
+  </script>
+</head>
+
+<!-- 
+If you want your own loading screen, change the body. IntraWeb doesn’t care.
+It’ll only show until IntraWeb loads, at which point it takes over the body
+like Skynet deciding the user interface is now its interface.
+
+Have fun, and don’t forget your towel, because no debugger respects
+a developer who travels unprepared.
+-->
+<body>
+  <div id="iw-loader" style="position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:#111;color:#0ff;font-family:Arial,Helvetica,sans-serif">
+    <div class="iw-center"><span  id="iw-loading" class="iw-pulse">Loading...</span><br><span id="iw-message" class="iw-tag iw-fade"></span></div>
+    <style>
+      #iw-loader .iw-center{text-align:center;font-size:2em;letter-spacing:2px}
+      #iw-loader .iw-tag{font-size:1.2em;color:#fff;opacity:.8}
+      #iw-loader .iw-pulse{display:inline-block;animation:iw_pulse 1.5s infinite}
+      #iw-loader .iw-fade{animation:iw_fade 3s infinite alternate}
+      @keyframes iw_pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(1.1);opacity:.6}100%{transform:scale(1);opacity:1}}
+      @keyframes iw_fade{from{opacity:.3}to{opacity:1}}
+    </style>
+  </div>
+<script>
+  document.getElementById('iw-loading').textContent = 'Loading ' + xAppName + '...';
+  const i = Math.floor(Math.random() * xMessages.length);
+  document.getElementById('iw-message').textContent = xMessages[i];
+</script>
+</body>
+</html>

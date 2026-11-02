@@ -1,0 +1,32 @@
+ACORN 1.0 IWML 1.0
+Validation.Index
+  SimpleStack
+    Stack
+      Width: 325px
+      Orientation: Horizontal
+
+      Text Username
+      Text:UserMsgText [b]Required
+        Cell.HAlign: Right
+        Color: red
+    
+    Edit:UsernameEdit
+      Width: 300px
+    
+    Stack
+      Width: 325px
+      Orientation: Horizontal
+
+      Text Password
+      Text:PassMsgText [b]Required
+        Cell.HAlign: Right
+        Color: red
+    
+    Edit:PasswordEdit
+      Width: 300px
+      Type: password
+    
+    EOL
+
+    Button:SubmitButton Submit
+      Enabled: false

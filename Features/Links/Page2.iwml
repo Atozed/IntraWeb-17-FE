@@ -1,0 +1,9 @@
+ACORN 1.0 IWML 1.0
+Features.Links.Page2
+  SimpleStack
+    Header 2|Links Page2
+    Text I'm Page2. Check out my brother, [Link(Page3.html):Page3]
+    gap
+    Button:Button1 Run Code
+    gap
+    Link Main|Index.html

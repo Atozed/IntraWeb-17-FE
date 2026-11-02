@@ -1,0 +1,7 @@
+ACORN 1.0 IWML 1.0
+Vue.Practical.GridSortFilter.Index
+  Div
+    Span
+      Text Search
+      Edit:SearchEdit
+  DataTable:Table

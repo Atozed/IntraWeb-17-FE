@@ -1,0 +1,18 @@
+ACORN 1.0 IWML 1.0
+Features.Layouts.TabPanel.Index
+  SimpleStack
+    Header 3|TabPanel Demo
+    TabPanel:Tabs
+      Text Tab One
+        Cell.Title: ⚡First
+      Text Tab Two
+      SimpleStack
+        Cell.Title: Big
+        Text Third Tab
+        EditMulti
+          Height: 150
+          Text:
+            Roses are red
+            Violets are blue
+            I fixed one bug in JavaScript
+            Now there are twenty two

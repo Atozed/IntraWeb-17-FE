@@ -1,0 +1,45 @@
+ACORN 1.0 IWML 1.0
+Image_Gallery.Index
+
+  Data[]
+    Data:Photos
+      Text:
+        [
+          {"id":1,"url":"./imgs/photo1.jpg","liked":false},
+          {"id":2,"url":"./imgs/photo2.jpg","liked":false},
+          {"id":3,"url":"./imgs/photo3.jpg","liked":false},
+          {"id":2,"url":"./imgs/photo4.jpg","liked":false},
+          {"id":3,"url":"./imgs/photo5.jpg","liked":false}
+        ]
+  SimpleStack
+
+    Header 1 | Image Gallery
+      Cell.HAlign: Center
+
+    SimpleStack
+      gap 10
+
+      SimpleStack
+
+        Stack
+          Orientation: Horizontal
+          Cell.HAlign: Center
+
+          Button:PrevButton <
+            Cell.VAlign: Middle
+            Height: 100px
+          gap
+
+          Image
+            URL: =.Photos.url
+            Width: 1000px
+          gap
+
+          Button:NextButton >
+            Cell.VAlign: Middle
+            Height: 100px
+
+        LikeControl.Like:PhotoLike
+          Cell.HAlign: Center
+          IsLiked: =.Photos.liked
+          FontSize: 30

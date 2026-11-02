@@ -1,0 +1,8 @@
+ACORN 1.0 IWML 1.0
+Page
+  SimpleStack
+    Text
+      Text:
+        I’m an IWML page with no code file attached. What could I be used for? Use your imagination.
+        I still support every IWML control and feature, templates included. A page with no brain,
+        but plenty of potential.

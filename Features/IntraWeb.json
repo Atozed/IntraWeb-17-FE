@@ -1,0 +1,12 @@
+{
+  "Name": "Features Demo",
+  "Language": "ts",
+  "GenerateFileList": "true",
+
+  "Files": [
+    { "/": [ "Index.ts", "Index.iwml" ] },
+    { "/Templates": [ "Index.ts", "Index.iwml", "Index.html" ] },
+    { "/Templates/More": [ "Index.ts" ] },
+    { "/Links": [ "Index.ts", "PageB.html", "PageA.html" ] }
+  ]
+}

@@ -1,0 +1,10 @@
+ACORN 1.0 IWML 1.0
+Features.ChildPage.Child
+  SimpleStack
+    Header 2|Child Page Child
+    Text
+      Text:
+        So here we are. A page inside another page. Like a web Russian doll.
+        Code runs fine, no drama, and I can even chat with my parent page directly,
+        and vice versa. Family therapy for HTML, but it works.
+    Button:Button1 Say Hello

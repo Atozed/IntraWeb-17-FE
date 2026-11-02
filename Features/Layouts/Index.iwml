@@ -1,0 +1,11 @@
+ACORN 1.0 IWML 1.0
+Features.Layouts.Index
+  SimpleStack
+    Header 2|Layouts Demo
+    Header 3|CollapsePanel
+    CollapsePanel Panel 1
+      Open: True
+      SimpleStack
+        Text Hello
+        Text World
+

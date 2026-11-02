@@ -1,0 +1,40 @@
+ACORN 1.0 IWML 1.0
+JSON_Local.Index
+  Styles[]
+    CSS
+      Text:
+        html, body {
+          background-color: lightblue;
+        }
+        .UserContainer {
+          background-color: white;
+          color: gray;
+          font-weight: bold;
+          padding: 15px;
+        }
+        .Username {
+          font-size: 14px;
+        }
+        .NameContainer {
+          font-size: 30px;
+          color: #222;
+        }
+
+  Data[]
+    Data:Persons persons.json
+      KeyName: username #If there is no id field, specify another unique field
+
+  SimpleStack
+    DataSource: Persons
+      SimpleStack
+        StyleClass: UserContainer
+        Text =*.username
+          StyleClass: Username
+        Div
+          StyleClass: NameContainer
+          Text =*.firstName
+          space
+          Text =*.lastName
+        Text =*.gender
+        Text =*.aboutAuthor
+      gap

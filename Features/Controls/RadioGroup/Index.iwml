@@ -1,0 +1,22 @@
+ACORN 1.0 IWML 1.0
+Features.Controls.RadioGroup.Index
+  SimpleStack
+    Header 2|RadioGroup Demo
+    gap
+
+    Header 3|Variable Binding
+    Text Value: [=this.Value1]
+    RadioGroup =this.Value1
+      Radio One|1
+      Radio Two|2
+    gap
+  
+    Header 3|Click Event
+    Text Click event on group.
+    Text Value: [=this.Value2]
+    Text:Text2 [space]
+    RadioGroup:Group2
+      Value: A
+      Radio:Radio2A One|A
+      Radio:Radio2B Two|B
+    gap

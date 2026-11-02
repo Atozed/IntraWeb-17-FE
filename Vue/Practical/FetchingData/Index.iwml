@@ -1,0 +1,31 @@
+ACORN 1.0 IWML 1.0
+Vue.Practical.FetchingData.Index
+  Data[]
+    Data:Commits
+  Styles[]
+    CSS
+      Text:
+        a { text-decoration: none; color: #42b883; }
+        li { line-height: 1.5em; margin-bottom: 20px; }
+  Header 1|Latest Vue Core Commits
+  Div
+    RadioGroup:BranchRadio =this.Branch
+      Radio main|main 
+      Radio minor|minor
+  EOL
+  TextDiv vuejs/core@[=this.Branch]
+  EOL
+  List
+    DataSource: Commits
+    span
+      link
+        Text: =*.sha
+        URL: =*.html_url
+      Text [space][=fn.Truncate(=*.commit.message)][eol]by[space]
+      link
+        Text: =*.commit.author.name
+        URL: =*.commit.author.html_url
+        Font.Bold: true
+      Text [space]at[space]
+      Text [=fn.FormatDate(=*.commit.author.date)]
+        Font.Bold: true

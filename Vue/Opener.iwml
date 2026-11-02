@@ -1,0 +1,21 @@
+ACORN 1.0 IWML 1.0
+Vue.Opener
+  SimpleStack
+    Text
+      Text:
+        This demo mirrors the Vue demos in IntraWeb 17 for a fair side-by-side comparison. Like most IntraWeb 17 demos, the focus is on function, not flash. Accuracy over glitter. No fancy effects to distract you or make Vue look worse (or better).
+
+        You can check the originals here:
+    Link https://vuejs.org/examples/|https://vuejs.org/examples/
+      NewWindow: true
+    Text
+      Text:
+        Then compare them yourself and see who wore it better.
+
+        Even the earlier demos can be done with HTML templates and by modifying attributes directly. Yeah, you can still do it that way if you prefer. You can mix IWML, HTML, CSS, JavaScript, and TypeScript all together without problems. We’ve focused on showing the IntraWeb way, but nothing stops you from using regular HTML tags right alongside it. The Templates section in the Features demo shows exactly how that works.
+
+        Yeah, we’ll add source viewing here too. But remember, IntraWeb already comes with its own WYSIWYG designer and a beefy Visual Studio Code plugin. So if you’re itching to peek under the hood, head over there and see how much power IntraWeb 17 is packing — it’s like viewing source, but on steroids and mood lighting.
+        
+        Fun fact: IntraWeb 1 was already running back in 1995—before Vue was even a twinkle in JavaScript’s eye. And if you think JavaScript is “fun” now, imagine what it was like back then. We remember when it was invented... and we still have the emotional scars to prove it.
+    Header 3|If you forgot your towel, even the Guide can’t save you now.
+    Text Click on a link on the left sidebar to get started.

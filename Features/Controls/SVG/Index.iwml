@@ -1,0 +1,19 @@
+ACORN 1.0 IWML 1.0
+Features.Controls.SVG.Index
+  SimpleStack
+    Header 2|SVG Demo
+
+    Header 3|HTML.SVG
+    Text While most IntraWeb controls are higher level, there are HTML.* controls available for lower level access. This shows how to use a lower level control.
+    Text HTML.SVG uses raw text to display SVG. It can be stored in IWML and visible in designer. It can be manipulated at runtime, but by changing the text data.
+    Text Events are avaiable via traditional DOM methods.
+    HTML.SVG
+      Content:
+        <rect x='10' y='10' width='80' height='80' fill='lightblue' stroke='black' />
+        <circle cx='50' cy='50' r='30' fill='red' opacity='0.6' />
+        <line x1='0' y1='0' x2='100' y2='100' stroke='black' />
+        <text x='50' y='95' text-anchor='middle' font-size='10'>Test SVG</text>
+
+    Header 3|SVG
+    Text SVG Control which allow easier runtime manipulation and direct IntraWeb event support. SVG must be constructed at runtime.
+    SVG

@@ -1,0 +1,95 @@
+ACORN 1.0 IWML 1.0
+Features.DataBinding.Advanced.Index
+  Data[]
+    Data:Purchases
+      Text:
+        [{"ID":3, "Item":"Rabbit Food", "Amount":29.99, "VendorID":3}
+        ,{"ID":1, "Item":"Candy", "Amount":1.50, "VendorID":1}
+        ,{"ID":2, "Item":"Toilet Seat", "Amount":99.99, "VendorID":2}
+        ,{"ID":4, "Item":"Light Bulbs", "Amount":9.49, "VendorID":1}
+        ,{"ID":5, "Item":"Sink", "Amount":75.00, "VendorID":2}]
+    Data:Vendors
+      Text:
+        [{"ID":1, "Name":"Amazoon"}
+        ,{"ID":2, "Name":"eCray"}
+        ,{"ID":3, "Name":"Home Despot"}]
+    Data:Users https://jsonplaceholder.typicode.com/users
+  SimpleStack
+    Header 2|Advanced Data Binding
+    Text This IWML contains two datasets, Purchases and Vendors declared as literal JSON text.
+    PreText
+      Text:
+        [off]Data[]
+          Data:Purchases
+            Text:
+              [{"ID":3, "Item":"Rabbit Food", "Amount":29.99, "VendorID":3}
+              ,{"ID":1, "Item":"Candy", "Amount":1.50, "VendorID":1}
+              ,{"ID":2, "Item":"Toilet Seat", "Amount":99.99, "VendorID":2}
+              ,{"ID":4, "Item":"Light Bulbs", "Amount":9.49, "VendorID":1}
+              ,{"ID":5, "Item":"Sink", "Amount":75.00, "VendorID":2}]
+          Data:Vendors
+            Text:
+              [{"ID":1, "Name":"Amazoon"}
+              ,{"ID":2, "Name":"zBay"}
+              ,{"ID":3, "Name":"Home Despot"}]
+          Data:Users https://jsonplaceholder.typicode.com/users
+
+    Header 3|ListBox
+    Text This ListBox is completely databound with three simple expressions.
+    PreText Items: =Rows(Order:asc).Vendors.Name
+    Text First, the items displayed to the user are shown. This expression specifies to use field Name from the Vendors dataset and order in in ascending order.
+    PreText Values: =Rows(Order:asc Sort:Name).Vendors.ID
+    Text Second, the values used for lookup to a second dateset are specific. This expression specifies to use field ID from the Vendors dataset, and but order by Name in in ascending order.
+    PreText Value: =.Purchases.VendorID
+    Text Third, the expression definfes where to retrieve and store the value to. This expression specifies the VendorID field in the Purchases dataset.
+    ListBox
+      Value: =.Purchases.VendorID
+      Items: =Rows(Order:asc).Vendors.Name
+      Values: =Rows(Order:asc Sort:Name).Vendors.ID
+    Text Next we specify simple data bindings with:
+    PreText
+      Text:
+        [off]=.Purchases.Item
+        =.Purchases.Amount
+    Text Item:
+    Edit =.Purchases.Item
+    Text Item:
+    Edit =.Purchases.Amount
+
+    Header 3|Data Cursors
+    Text Each dataset maintains its own cursor. You can use these buttons to move forward and backward.
+    Text Note how the bound controls above, including the ListBox update automatically.
+    Button:PrevButton Previous
+    Button:NextButton Next
+
+    Header 3|Row Binding
+    Text Rows that are not pointed to by the cursor can also be bound to. Despite the lookups, the bindings remain two way.
+    PreText [off]=.Vendors.Name
+    Text Row pointed to by cursor.
+    Edit =.Vendors.Name
+    PreText [off]=.Vendors(Key:3).Name
+    Text Row with Key=3. In Vendors, ID is the Key.
+    Edit =.Vendors(Key:3).Name
+    PreText [off]=.Vendors(Index:1).Name
+    Text Second row in Vendors (Index 1)
+    Edit =.Vendors(Index:1).Name
+
+    Header 3|Nested Data
+    Text Nested data can easily be accessed as well.
+    PreText Text =.Users.name
+    Text Name: [=.Users.name]
+    PreText Text =.Users.address.city
+    Text =.Users.address.city
+    PreText Text Coordinates [=.Users.address.geo.lat] : [=.Users.address.geo.lng]
+    Text Coordinates [=.Users.address.geo.lat] : [=.Users.address.geo.lng]
+
+    Header 3|Page Binding
+    Text You can even auomatically enable/disable the buttons using data binding.
+    Text Note: This syntax will be changing in the near future.
+    PreText Enabled: =page.Users.BOF:!
+    Button:PrevUsersButton Previous
+      Enabled: =page.Users.BOF:!
+    PreText Enabled: =page.Users.EOF:!
+    Button:NextUsersButton Next
+      Enabled: =page.Users.EOF:!
+    Text The : specifies a modifier. There are several available, but here we use ! which peforms a boolean inversion on the previous identifier.

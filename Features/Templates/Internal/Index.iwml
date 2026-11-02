@@ -1,0 +1,21 @@
+ACORN 1.0 IWML 1.0
+Features.Templates.Internal.Index
+  SimpleStack
+    Text This is an inline template. The HTML is not from a URL, but is included in the IWML.
+    Template
+      HTML:
+        <html>
+          <head></head>
+        <body>
+        <h2>Inline Template</h2>
+        <p>IWML says: <span style="color:red">{%Text1%}</span>. The previous text came from an IWML control.</p>
+        <p>You can embed any control you want. Enter your name: {%Edit1%}, and here is a button {%Button1%}</p>
+        <h2>Modify HTML Elements</h2>
+        <p>This paragraph is entirely HTML, <b><span id="Target">Target Area</span></b> but can still be modified by IntraWeb code.</p>
+        <p>This text {%Edit2%} will be inserted above when you press this button {%Button2%}</p>
+        </body></html>
+      Text:Text1 Hello World!
+      Edit:Edit1 <name>
+      Button:Button1 Say Hello
+      Edit:Edit2 From IntraWeb
+      Button:Button2 Go!

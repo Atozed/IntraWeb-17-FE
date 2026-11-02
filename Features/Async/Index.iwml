@@ -1,0 +1,14 @@
+ACORN 1.0 IWML 1.0
+Features.Async.Index
+  SimpleStack
+    Header 2|Async Demo
+    Text This demo shows how to make async calls from IntraWeb events using two different methods.
+    SimpleStack
+      Button:ThenButton Use .then
+      Button:AwaitButton Use await
+      Button:SyncButton Use Synchronous
+    gap
+    EditMulti:OutputEdit
+      ReadOnly: true
+      Width: 300
+      Height: 300

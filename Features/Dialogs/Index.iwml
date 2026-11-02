@@ -1,0 +1,31 @@
+ACORN 1.0 IWML 1.0
+Features.Dialogs.Index
+  SimpleStack
+    Header 2|Dialogs
+    Button:ShowMessageButton Show Message
+    gap
+    span
+      Button:YesNoButton Confirm
+      gap
+      Text:YesNoResultText
+    gap
+    span
+      Button:GetTextButton Get Text
+      gap
+      Text:GetTextResultText
+    gap
+    span
+      Button:MultChoiceButton Multiple Choice
+      gap
+      Text:MultChoiceResultText
+    gap
+    Button:MemoButton Edit
+    CheckBox:MemoFullCheckBox Full Window
+    EditMulti:MemoEditMulti
+      Height: 100
+      Text:
+        Roses are red.
+        Violets are blue.
+        JavaScript compiled.
+        Nobody knows how.
+        Production is on fire.          

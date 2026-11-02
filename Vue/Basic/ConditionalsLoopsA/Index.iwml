@@ -1,0 +1,23 @@
+ACORN 1.0 IWML 1.0
+Vue.Basic.ConditionalsLoopsA.Index
+  HTML.P This demo took an approach where Vue focused on the implementation details. Repeating that same path in IntraWeb added work without improving the result.
+  TextList ABC|So you get two versions:
+    Items:
+      The IntraWeb way. Higher level. Faster. Less code. (This one)
+      A Vue-style approach. Closer to how Vue builds it.
+  HTML.P IntraWeb stays at a higher level by default. When you need control, you drop to raw HTML, like inline assembly in C.
+  
+  Button:ToggleButton Toggle List
+  Button:PushButton Push Number
+  Button:PopButton Pop Number
+  Button:ReverseButton Reverse List
+
+  Span:ListSpan
+    Collapsed: =this.ShowList:!
+    TextList:TextList 
+      Items: =this.List
+    HTML.P:ParaEmpty List is empty.
+      Collapsed: =this.List.length:!=0
+
+  HTML.P:ParaHidden List is not empty, but hidden.
+    Collapsed: =this.ShowList

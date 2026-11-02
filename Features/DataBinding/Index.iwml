@@ -1,0 +1,75 @@
+ACORN 1.0 IWML 1.0
+Features.DataBinding.Index
+  Data[]
+    Data:Users https://jsonplaceholder.typicode.com/users
+  SimpleStack
+    Header 2|Data Binding
+    Text Databinding allows both one way and two way databinding with simple expressions.
+    Text Markdown also supports any data binding expression, however the binding becomes read only.
+
+    Header 2|Static Bindings (One Way)
+    Text Static bindings are update once during initialization and not updated again.
+    Text Static bindings are used to load resources and other items.
+
+    Header 3|HTTP
+    PreText [off]=HTTP(https://jsonplaceholder.typicode.com/users)
+    EditMulti =HTTP(https://jsonplaceholder.typicode.com/users)
+      Width: 300
+      Height: 100
+
+    Header 3|'' - Literal
+    Text String literal. Useful only in corner cases.
+    PreText [off]=''(Hello World)
+    Text =''(Hello World)
+
+    Header 3|URL
+    Text Allows retrieval of a parameter in the URL of the request.
+
+    Header 3|Code Call
+    Text Allows a binding to call code to provide a value, or even modify data.
+    Text 6 * 4: 
+
+    Header 2|Dynamic Bindings (Two way)
+    # Data and field in code
+
+    Header 3|This - Code Property Binding
+    Text These values are properties declared in the code file.
+    PreText
+      Text:
+        MagicNo: [=this.MagicNo]
+        Message: [=this.Message] [=this.MagicNo]
+    Text If you change the values in code, the bindings update automatically. Push this button to see.
+    Button:ThisButton Change
+
+    Header 3|Prop
+    Text Static if page only
+
+    Header 3|Page
+    Text Page allows access to the page versus code (this). The page contains its own list of controls.
+    Text This is useful when there is no code behind to access Dataset EOF/BOF for example. See Advanced Data Binding Example.
+
+    Header 2|JSON Data
+    Text All of these samples are using this dataset.
+    PreText Data:Users https://jsonplaceholder.typicode.com/users
+    Text This dataset is loaded by URL, but literal JSON can be embedded also.
+
+    Header 3|Data (Default)
+    Text The data tag is the default, so it can be specified as in the first exmaple:
+    PreText [off]=data.Users.name 
+    Text or omitted as in the other examples:
+    PreText [off]=.Users.username / =.Users.email
+    Text These are two way databindings. Changes are applied back to the dataset for easy REST or other CRUD.
+    Text By default the cursor is on the first row, so these return data from the first row.
+    Edit =data.Users.name
+    Edit =.Users.username
+    Edit =.Users.email
+    Text Data tags also support locators allowing access to other rows without moving the cursor.
+    Text Please see a demo wtih more Data bindings for examples.
+
+    Header 3|*
+    Text * is used with controls that iterate over rows in a dataset, such as repeaters. * signfies the current row.
+    Text For more information, see a demo wtih a repeater.
+
+    Header 3|ROWS
+    Text ROWS is used to convert a single field into a string array, for use with look ups etc.
+    Text For more information, see a demo wtih ROWS.

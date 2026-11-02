@@ -1,0 +1,6 @@
+ACORN 1.0 IWML 1.0
+Vue.GUIs.TempConverter.Index
+  EditNum:EditC =this.C
+  Text [space]Celsius =[space]
+  EditNum:EditF =this.F
+  Text [space]Fareignheight

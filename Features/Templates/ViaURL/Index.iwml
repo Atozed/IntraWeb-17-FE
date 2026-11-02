@@ -1,0 +1,6 @@
+ACORN 1.0 IWML 1.0
+Features.Templates.ViaURL.Index
+  Template MyTemplate.html
+    Text:Text1 Hello World!
+    Edit:Edit1 <name>
+    Button:Button1 Say Hello

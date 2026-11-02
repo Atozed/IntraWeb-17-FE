@@ -1,0 +1,89 @@
+html, body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+  padding: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.25em 0 0.25em;
+  line-height: 1.25;
+  color: #111;
+}
+
+p {
+  margin: 0 0 1em;
+  max-width: 70ch;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  padding: 0.5em 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+
+button:hover {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+code, pre {
+  font-family: Consolas, Monaco, monospace;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2em 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+  margin: 0 0 1em;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 4px solid #0077cc;
+  color: #555;
+}

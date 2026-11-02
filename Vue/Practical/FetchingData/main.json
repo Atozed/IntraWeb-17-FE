@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "f677d830e64e4afc2f364e47f0fc5aa076c30f46",
+    "node_id": "C_kwDOCCum19oAKGY2NzdkODMwZTY0ZTRhZmMyZjM2NGU0N2YwZmM1YWEwNzZjMzBmNDY",
+    "commit": {
+      "author": {
+        "name": "edison",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-12T01:59:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T01:59:21Z"
+      },
+      "message": "ci: avoid dependency cache and pin actions in release workflow (#14807)",
+      "tree": {
+        "sha": "c0d1acab6a7906a1f240f234ea40b7a44e32cc1e",
+        "url": "https://api.github.com/repos/vuejs/core/git/trees/c0d1acab6a7906a1f240f234ea40b7a44e32cc1e"
+      },
+      "url": "https://api.github.com/repos/vuejs/core/git/commits/f677d830e64e4afc2f364e47f0fc5aa076c30f46",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAol5CRC1aQ7uu5UhlAAAe50QADjf4K9gFLHdIm418lVfJDWU\nCsGsv5yDHqKFCMtD11d7emoXByq5cKrOH8N0GUTGS/PlattEvW8kV114WzwrK2Qc\noCJfAPch5YGCzVbm5iKNO+7qv0gSSQoZuzv21I6eT8S2kTgb0e6amnXMG4C0otdh\npzIA1IWH2/oQ2UOQplKY+85DeBP6uR2DUDJdUfZFMxRv+hLXSNfTLWXtz7OUlzfw\nsCz7MPYMy48itq2IhcGpfZ6AIwPeV14lM15+kciYKMc9tPNh38veH75LVJ3HrTHa\nA3hb9vl7aaJMrZwxqRk5N3ZGmGD/g206c2jkvM65IWP9HywVzVw0Tvipv0h6/N9p\nVJMKTBPJebGcMF50Q9ERXzGVPu119Rf9tLWWMdTN70BZxmMcW0hbvVFtiPhJMUuo\naQJ+i4lzDqDNnUlu/LKJX2wF7ocmMYQhgCD48lzkNKn/japdtdclPgIcR47fI0jl\n4T4EcxNBnID4bocIzWKdsrvZZzA7+y6evTf/oF1rXe2g2vZo0/o9ILR0Rmzk0HcO\nhGTNB8TFs2Wl88zzfzcqntci0hO5Dq+9a4uOblaYXx1aQqDFOal1pCkfXl9TKARd\nZTpTjnPmiKs7N8p7zxt+TvgxLC1IJyPeFoKWXQDXRMc+IqWiSwvB3uEkQcR3Kb1j\naJUM+lBQ2WkHoa3CXLYq\n=XrSi\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c0d1acab6a7906a1f240f234ea40b7a44e32cc1e\nparent 57545e958ae28ed17aa9e0ed321abcd8dc99f752\nauthor edison <daiwei521@126.com> 1778551161 +0800\ncommitter GitHub <noreply@github.com> 1778551161 +0800\n\nci: avoid dependency cache and pin actions in release workflow (#14807)",
+        "verified_at": "2026-05-12T01:59:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/vuejs/core/commits/f677d830e64e4afc2f364e47f0fc5aa076c30f46",
+    "html_url": "https://github.com/vuejs/core/commit/f677d830e64e4afc2f364e47f0fc5aa076c30f46",
+    "comments_url": "https://api.github.com/repos/vuejs/core/commits/f677d830e64e4afc2f364e47f0fc5aa076c30f46/comments",
+    "author": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "57545e958ae28ed17aa9e0ed321abcd8dc99f752",
+        "url": "https://api.github.com/repos/vuejs/core/commits/57545e958ae28ed17aa9e0ed321abcd8dc99f752",
+        "html_url": "https://github.com/vuejs/core/commit/57545e958ae28ed17aa9e0ed321abcd8dc99f752"
+      }
+    ]
+  },
+  {
+    "sha": "57545e958ae28ed17aa9e0ed321abcd8dc99f752",
+    "node_id": "C_kwDOCCum19oAKDU3NTQ1ZTk1OGFlMjhlZDE3YWE5ZTBlZDMyMWFiY2Q4ZGM5OWY3NTI",
+    "commit": {
+      "author": {
+        "name": "daiwei",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-06T07:15:35Z"
+      },
+      "committer": {
+        "name": "daiwei",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-06T07:15:35Z"
+      },
+      "message": "release: v3.5.34",
+      "tree": {
+        "sha": "3afb7fd19083492d306cab54f45bfda2cfa918d1",
+        "url": "https://api.github.com/repos/vuejs/core/git/trees/3afb7fd19083492d306cab54f45bfda2cfa918d1"
+      },
+      "url": "https://api.github.com/repos/vuejs/core/git/commits/57545e958ae28ed17aa9e0ed321abcd8dc99f752",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/vuejs/core/commits/57545e958ae28ed17aa9e0ed321abcd8dc99f752",
+    "html_url": "https://github.com/vuejs/core/commit/57545e958ae28ed17aa9e0ed321abcd8dc99f752",
+    "comments_url": "https://api.github.com/repos/vuejs/core/commits/57545e958ae28ed17aa9e0ed321abcd8dc99f752/comments",
+    "author": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3b2617060ffbebc7525d7bb118a052766c16360",
+        "url": "https://api.github.com/repos/vuejs/core/commits/a3b2617060ffbebc7525d7bb118a052766c16360",
+        "html_url": "https://github.com/vuejs/core/commit/a3b2617060ffbebc7525d7bb118a052766c16360"
+      }
+    ]
+  },
+  {
+    "sha": "a3b2617060ffbebc7525d7bb118a052766c16360",
+    "node_id": "C_kwDOCCum19oAKGEzYjI2MTcwNjBmZmJlYmM3NTI1ZDdiYjExOGEwNTI3NjZjMTYzNjA",
+    "commit": {
+      "author": {
+        "name": "renovate[bot]",
+        "email": "29139614+renovate[bot]@users.noreply.github.com",
+        "date": "2026-05-06T06:45:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-06T06:45:43Z"
+      },
+      "message": "chore(deps): update dependency jsdom to ^29.1.1 (#14775)",
+      "tree": {
+        "sha": "2a889affccfcd9bc32af9dc0a2051a059652802b",
+        "url": "https://api.github.com/repos/vuejs/core/git/trees/2a889affccfcd9bc32af9dc0a2051a059652802b"
+      },
+      "url": "https://api.github.com/repos/vuejs/core/git/commits/a3b2617060ffbebc7525d7bb118a052766c16360",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp+uOXCRC1aQ7uu5UhlAAA4ngQAG62CPhjYB1J6UyrEzlZQr72\nXzy2y1zz3cONkutYPgrOj7MVyZTYWwlS7ISkGoKnpY/VYTyFGkSlRUfKf33wUdaN\nBeoj3/VC7hsccnqHb4PzcqiQGRs7AAf3GRcRxpPUfLpkQB2+m0Jwp1uNJulAgUJu\nzEV7k45D6YcFe3YyovSnXir21smFkVf3MiZciN72N32W9Tdl4ngTbK25uDy/5cnB\nInb2a2yJXvc6k8XVc6X8zDZjEqV0vhhIM5rTFtoyCz5RjdY4TmoQJ5ft7fbVRYPI\n1BnUvdi09jJsQ1I19ySTjIMIQCJaJxrhrJknegfiQ6q1l6yCp+NIarMj1RBU3KcO\n5bcfnwYtVGm4E9hoyMwlTQIxxjn/MRi0wifNCObptEULY21uzJFWI9J2C8jXFcxK\n/jicc1GB5v6zUiJY08A0O3+uMciIpyOSkyMYujkMsi6XmCv0mjB4gPPoYMUlcdeP\n+SQmY7C/Oo4ap1Xjr64VEsWjybjqoKS05LcvuQE3UrJ4yCdKeASC8sOKEvOco6fu\nx6wmx7TK2NFSy2DtiAsmwIY7k1jGCPNnV0zRsjawJpIJvnboAVytq1Cqoms4wUyH\nlJcFTCvLq7/VCZa0Idrt9vKb6JBQP5wMySMIayfQAswr2k7MCXKwBtEjHoIYe8mx\nJKV52DISdN/jBb0sNS6y\n=zKmb\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2a889affccfcd9bc32af9dc0a2051a059652802b\nparent 23d4fb5a6a070df3d2d4a043f0f62c141e376095\nauthor renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 1778049943 +0800\ncommitter GitHub <noreply@github.com> 1778049943 +0800\n\nchore(deps): update dependency jsdom to ^29.1.1 (#14775)",
+        "verified_at": "2026-05-06T06:45:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/vuejs/core/commits/a3b2617060ffbebc7525d7bb118a052766c16360",
+    "html_url": "https://github.com/vuejs/core/commit/a3b2617060ffbebc7525d7bb118a052766c16360",
+    "comments_url": "https://api.github.com/repos/vuejs/core/commits/a3b2617060ffbebc7525d7bb118a052766c16360/comments",
+    "author": {
+      "login": "renovate[bot]",
+      "id": 29139614,
+      "node_id": "MDM6Qm90MjkxMzk2MTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/renovate%5Bbot%5D",
+      "html_url": "https://github.com/apps/renovate",
+      "followers_url": "https://api.github.com/users/renovate%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/renovate%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/renovate%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/renovate%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/renovate%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/renovate%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/renovate%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/renovate%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/renovate%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "23d4fb5a6a070df3d2d4a043f0f62c141e376095",
+        "url": "https://api.github.com/repos/vuejs/core/commits/23d4fb5a6a070df3d2d4a043f0f62c141e376095",
+        "html_url": "https://github.com/vuejs/core/commit/23d4fb5a6a070df3d2d4a043f0f62c141e376095"
+      }
+    ]
+  }
+]

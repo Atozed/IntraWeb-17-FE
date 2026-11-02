@@ -1,0 +1,9 @@
+ACORN 1.0 IWML 1.0
+Features.ChildPage.Index
+  SimpleStack
+    Header 2|Child Page
+    Text
+      Text:
+        Below this is a child page loaded into this one. And since I’m already a child page, that makes it a 
+        grandchild page of the main page. Three generations of HTML in one screen. Family reunion powered by IntraWeb 17.
+    ChildPage:ChildPage1

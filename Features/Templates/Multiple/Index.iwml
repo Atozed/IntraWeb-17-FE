@@ -1,0 +1,15 @@
+ACORN 1.0 IWML 1.0
+Features.Templates.Multiple.Index
+  SimpleStack
+    Header 2|TemplateMulti Demo
+    Text This is an IWML page which has more than on template in it.
+    Header 3|Template 1
+    Template:Template1
+      Edit:Edit1 IntraWeb
+      Button:Button1 Button1
+    Header 3|Template 1
+    Template:Template2
+      Button:Button2 Button2
+      Button:Button3 Button3
+    Header 3|Nested Templates
+    Text Templates can even have nested templates. Yeah, template-ception. Something to mess with when you’re feeling brave or bored enough to see how deep the rabbit hole goes.

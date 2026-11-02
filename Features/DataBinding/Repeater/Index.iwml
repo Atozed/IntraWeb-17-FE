@@ -1,0 +1,52 @@
+ACORN 1.0 IWML 1.0
+Features.DataBinding.Repeater.Index
+  Data[]
+    Data:Purchases
+      Text:
+        [{"ID":3, "Item":"Rabbit Food", "Amount":29.99, "VendorID":3}
+        ,{"ID":1, "Item":"Candy", "Amount":1.50, "VendorID":1}
+        ,{"ID":2, "Item":"Toilet Seat", "Amount":99.99, "VendorID":2}
+        ,{"ID":4, "Item":"Light Bulbs", "Amount":9.49, "VendorID":1}
+        ,{"ID":5, "Item":"Sink", "Amount":75.00, "VendorID":2}]
+    Data:Vendors
+      Text:
+        [{"ID":1, "Name":"Amazoon"},
+        {"ID":2, "Name":"eCray"},
+        {"ID":3, "Name":"Home Despot"}]
+  SimpleStack
+    Header 2|Repeater
+    Text Layouts can iterate over a dataset.
+    PreText
+      Text:
+        Data:Purchases
+          Text:
+            [off][{"ID":3, "Item":"Rabbit Food", "Amount":29.99, "VendorID":3}
+            ,{"ID":1, "Item":"Candy", "Amount":1.50, "VendorID":1}
+            ,{"ID":2, "Item":"Toilet Seat", "Amount":99.99, "VendorID":2}
+            ,{"ID":4, "Item":"Light Bulbs", "Amount":9.49, "VendorID":1}
+            ,{"ID":5, "Item":"Sink", "Amount":75.00, "VendorID":2}]
+
+    Text Every layout control supports a repeat function. Here we do the most basic iteration, but it can be used to create grids, lists, or anything your imagination desires.
+    Header 3|SimpleStack
+    PreText
+      Text:
+        [off]SimpleStack
+          DataSource: Purchases
+          Header 3|=*.Item
+          Text ID: [=*.ID] Cost: [=*.Amount]
+    Text To use, simply assign a dataset property and create child controls as normal. For binding, specify * instead dataset name. =*.fieldname
+    Text The * signifies the current row to bind to in the iterator. Bindings remain 2 way, and if bound to an editable control, changes will automatically be applied back to the dataset.
+    Text There are also code callbacks for tax and Product Number.
+    SimpleStack:RepeatStack
+      DataSource: Purchases
+      Header 4|=*.Item
+      Text ID: [=*.ID] Cost: [=*.Amount]
+      Text With 6% Tax:
+      Text Product Number: 
+    gap
+
+    Header 3|List
+    Button:AddVendorButton Add
+    List
+      DataSource: Vendors
+      Text =*.Name

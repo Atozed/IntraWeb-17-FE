@@ -1,0 +1,11 @@
+ACORN 1.0 IWML 1.0
+Pager.More.Index
+  SimpleStack
+    Text Other Index
+    gap
+    Text This is a random number to show how state is preserved. You can change it if you want.
+    Edit:StateEdit
+    gap
+    Button:HelloButton Say Hi!
+    gap
+    Button:CloseButton Close

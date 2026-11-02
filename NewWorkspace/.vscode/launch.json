@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {  
+      "name": "Development Server",
+      "preLaunchTask": "build",
+      "type": "chrome", 
+      "request": "launch",
+      "sourceMaps": true,
+      "url": "http://localhost:3000/IW17/",
+      "port": 9222,
+      "smartStep": true,
+      "webRoot": "${workspaceRoot}"
+    },
+
+    { 
+      "name": "Web Server",
+      "preLaunchTask": "build",
+      "type": "chrome", 
+      "request": "launch",
+      "sourceMaps": true,
+      "url": "http://localhost/IW17/",
+      "port": 9222,
+      "smartStep": true,
+      "webRoot": "${workspaceRoot}"
+     }
+  ]
+}

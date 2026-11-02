@@ -1,0 +1,26 @@
+ACORN 1.0 IWML 1.0
+Booking.Index
+  Title: Book Appointment
+  SimpleStack
+    Template
+      Edit:NameEdit
+        Placeholder: Jane Smith
+      Edit:PhoneEdit
+        Placeholder: +1 555 000 0000
+      Edit:EmailEdit
+        Placeholder: jane@example.com
+      RadioGroup:ServiceGroup =this.Service
+        Radio Consultation|Consultation
+        Radio Check-up|Check-up
+        Radio Procedure|Procedure
+        Radio Follow-up|Follow-up
+      RadioGroup:TimeGroup =this.TimeSlot
+        Radio 9:00 - 10:00|09:00
+        Radio 11:00 - 12:00|11:00
+        Radio 14:00 - 15:00|14:00
+        Radio 16:00 - 17:00|16:00
+      EditMulti:NotesEdit
+        Height: 80
+      Text:SummaryText
+      Button:BookButton Book Appointment
+      Text:StatusText

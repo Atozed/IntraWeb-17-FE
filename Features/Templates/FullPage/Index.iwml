@@ -1,0 +1,12 @@
+ACORN 1.0 IWML 1.0
+Features.Templates.FullPage.Index
+  Template
+    Text:Text1 Hello World!
+    Edit:Edit1 <name>
+    Button:Button1 Say Hello
+    Edit:Edit2 From IntraWeb
+    Button:Button2 Go!
+    SimpleStack:Stack1
+      Text One
+      Edit Two
+      Button Three

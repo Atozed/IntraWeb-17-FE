@@ -1,0 +1,9 @@
+ACORN 1.0 IWML 1.0
+GuessTemplate.Index
+  Title: Guess Template
+  SimpleStack
+    Template
+      Edit:GuessEdit =this.Guess 
+      Text:MsgText =this.Msg
+      Text:CountText
+      Button:GuessButton Guess

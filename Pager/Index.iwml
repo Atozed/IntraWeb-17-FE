@@ -1,0 +1,21 @@
+ACORN 1.0 IWML 1.0
+Pager.Index
+  SimpleStack
+    Text Pager Demo
+    gap
+    Text This is a random number to show how state is preserved. You can change it if you want.
+    Edit:StateEdit
+    gap
+    Button:OtherIndexButton Other Index
+    gap
+    Button:OtherIndexParamButton Other Index with Param
+    gap
+    Text This will create a new instance of Page A every time.
+    Button:PageANewButton New Page A
+    gap
+    Text This will create a persistent instance that you can reshow while saving all state.
+    Button:PageAInstance1Button Page A Instance 1
+    gap
+    Text This will create a 2nd persistent instance that you can reshow while saving all state.
+    Button:PageAInstance2Button Page A Instance 2
+    

@@ -1,0 +1,3 @@
+# Generated JavaScript and source maps are kept out of the repository.
+*.gen.js
+*.js.map

@@ -1,0 +1,28 @@
+ACORN 1.0 IWML 1.0
+Features.Controls.Index
+  SimpleStack
+    Header 2|Controls
+    Text
+      Text:
+        Various controls. We will expand this to include the full set and polish the page.
+        This is a simple preview of various controls. There are many more
+        controls than shown here.
+
+    Header 3|Button
+    Button Button
+
+    Header 3|Edit
+    Edit Edit
+
+    Header 3|EditMulti
+    EditMulti
+      Width: 150
+      Height: 60
+      Text:
+        One
+        Two
+
+        Three
+
+    Header 3|Text
+    Text Text

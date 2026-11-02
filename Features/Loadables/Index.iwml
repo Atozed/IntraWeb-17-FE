@@ -1,0 +1,14 @@
+ACORN 1.0 IWML 1.0
+Features.Loadables.Index
+  SimpleStack
+    Header 2|Jodit Editor
+    Text This page demonstrates the Jodit WYSIWYG HTML editor loadable control.
+    Text Use the toolbar to format the document. Use the Source button to edit its HTML.
+    gap
+    Jodit.Editor:HTMLEditor
+      Width: 100%
+      Height: 400
+      HTML:
+        <h3>Hello, World!</h3>
+        <p>Edit this text as you would in a word processor.</p>
+        <p><strong>Bold</strong>, <em>italic</em>, lists, links, tables, and HTML source editing are available from the toolbar.</p>

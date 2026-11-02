@@ -1,0 +1,4 @@
+ACORN 1.0 IWML 1.0
+Vue.GUIs.Counter.Index
+  Text =this.Count
+  Button:CountButton Count

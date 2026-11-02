@@ -1,0 +1,63 @@
+ACORN 1.0 IWML 1.0
+Features.Markdown.Index
+  Data[]
+    Data:Users https://jsonplaceholder.typicode.com/users
+  Styles[]
+    css Index.css
+  SimpleStack
+    Header 2|IntraWeb Markdown
+    Text
+      Text:
+        [off]IntraWeb 17 supports inline markdown which is also expandable. There are several built in tags, and you can add  your own ones by registering a handler, or even a local one using a function.
+        To use markdown, wrap the target in []. The full syntax is [tag(params):value].
+        Here we use them with Text controls but many other controls support IntraWeb Markdown also.
+    SimpleStack
+      Header 3|HTML
+      Text [html]No Markdown using HTML tag [Hello]
+      Text [html]HTML <b>bold</b><span style="Visibility: inline-block; width: 30pt"></span>Space 30
+
+      Header 3|HTML(style)
+      Text [html]<span class="bluebg">Blue Background from CSS</span> No more CSS here...
+      Text [html(bluebg)]Blue Background from CSS. Everything is CSS.
+      Text [html(bluebg):Blue Background from CSS] No more CSS here...
+
+      Header 3|Off
+      Text [off]No Markdown using OFF tag [Hello]
+      Text [off]Text with special[]
+      Text [off]Text with special]
+
+      Header 3|Space(30)
+      Text Text with[space(30)]Space 30
+
+      Header 3|B / I
+      Text [b:Bold] and [i:Italic]
+
+      Header 3|EOL
+      Text Embedded EOL[eol]After EOL
+
+      Header 3|Atozed-Uppercase
+      Text You can define your own markdown. This is a custom markdown tag defined in the accompanying code file.
+      Text [Atozed-UpperCase:Hello]
+      Text [Atozed-UpperCase]Hello
+
+      Header 3|Data Binding
+      Text Data from the JSON data set in the URL inside the IWML file. We haven't moved the cusror, so it shows data from the first row. Users in the data section points to:
+      Link https://jsonplaceholder.typicode.com/users|https://jsonplaceholder.typicode.com/users
+      Text [off] The tag used below is [=.Users.name]
+      Text Name: [=.Users.name]
+
+      Header 3|this - Code Property Binding
+      Text These values are properties declared in the code file.
+      Text MagicNo: [=this.MagicNo]
+      Text Message: [=this.Message] [=this.MagicNo]
+      Text If you change the values in code, the bindings update automatically. Push this button to see.
+      Button:ThisButton Change
+
+      Header 3|More Bindings
+      Text [off]In addition to Markdown tags, any binding can also be used by using =. ie [=binding].
+      Text For all data binding types beyond what is shown here, see the Data Binding demo.
+      Text Bindings in markdown become readonly. To preserve two way, use data binding instead.
+
+      Header 3|More Markdown tags
+      Text Here is a complete list of Markdown tags.
+      TextList:TagList

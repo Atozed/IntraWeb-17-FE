@@ -1,0 +1,8 @@
+ACORN 1.0 IWML 1.0
+Tests.Index
+  Title: Tests
+  Header 3|Tests
+  TextDiv This is used to do basic testing of the framework. Other Demos are better to learn from but this application may be usefulf for learning purposes as well. Unlike other demos, not much is explained and is optimized simply for testing and verification.
+  TextDiv Note: This is a work in progress, and may need configuration changes to run outside internal dev environment.
+    Font.Bold: true
+  Button:TestAllButton Test All

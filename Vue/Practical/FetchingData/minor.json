@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "0c516295e207abe9a043f2546f0d84fc5b1d04eb",
+    "node_id": "C_kwDOCCum19oAKDBjNTE2Mjk1ZTIwN2FiZTlhMDQzZjI1NDZmMGQ4NGZjNWIxZDA0ZWI",
+    "commit": {
+      "author": {
+        "name": "edison",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-12T09:10:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-12T09:10:59Z"
+      },
+      "message": "chore(sfc): omit false vapor multi-root marker (#14808)",
+      "tree": {
+        "sha": "f72aed38a6c06c318c7bd2d9350f33973633a1d3",
+        "url": "https://api.github.com/repos/vuejs/core/git/trees/f72aed38a6c06c318c7bd2d9350f33973633a1d3"
+      },
+      "url": "https://api.github.com/repos/vuejs/core/git/commits/0c516295e207abe9a043f2546f0d84fc5b1d04eb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAu6jCRC1aQ7uu5UhlAAAfDEQAE9F3qx9tXQGYkPVMe+7n/3k\ndQuFg++9yhtldQOasK7Laj/jZ9KKyVazkKC3F3btvdXIBW4Ntmr2V70FGP5fx6rg\nTFiU4HMVjE+qwrDnqDOIig2UoWTact1NIgSQsutGl2lFIAb92gy9NbSc+P9utpiF\nRV4hffOGiwsEdIOxCYJaWKh/ulpxVB+BkT/YWs0U+XRtGrTL1xywd1afMIHSpo3p\n0XiOLOeANF57mbydM/jvmQyEcKIC/WI9uFS2CIQ4IM//AyzcHsBvCxdUiT6J6LP/\ngR5fboIF8oFUosfjTKBCuxOcVSJS62eQyhi5Wu2QT1wtJb6pShFCpBp6hLGpXlQX\nP5hYzibPvDDW8vqrI1Rtff5i5v66ISu2KvHpnyxBYgxRuc0oGVVe9t1ZC19/oQqB\nUt9JYI+sxO6sZQdTJQbp9mE0LmxKRyA6x/89+nzxOpaeL7d569rSu9D+p+jCUeB3\n+jldfTJn9OThm97d2Q9I9G/EQldxPMWkckGPn0UD7237A/3EqdmaEMmnzftSrDjh\nZRMaNrEqHjmRDVjh56CalWKJXbvlkkvTmh+ZrpaL3LxKRXaPut4TpLQwgRyiKG46\n7xwPwTvarKFGT1QvQIbt7zD+shK61J3wnJ7OWdY8pAmFEeqil1VlnmdiUrSXR1mP\n9Exfb4s1FMFYpvF6dxCW\n=UYU0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f72aed38a6c06c318c7bd2d9350f33973633a1d3\nparent 1292bc491bd87c62a795475f83ad1839dccd5a0f\nauthor edison <daiwei521@126.com> 1778577059 +0800\ncommitter GitHub <noreply@github.com> 1778577059 +0800\n\nchore(sfc): omit false vapor multi-root marker (#14808)",
+        "verified_at": "2026-05-12T09:10:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/vuejs/core/commits/0c516295e207abe9a043f2546f0d84fc5b1d04eb",
+    "html_url": "https://github.com/vuejs/core/commit/0c516295e207abe9a043f2546f0d84fc5b1d04eb",
+    "comments_url": "https://api.github.com/repos/vuejs/core/commits/0c516295e207abe9a043f2546f0d84fc5b1d04eb/comments",
+    "author": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1292bc491bd87c62a795475f83ad1839dccd5a0f",
+        "url": "https://api.github.com/repos/vuejs/core/commits/1292bc491bd87c62a795475f83ad1839dccd5a0f",
+        "html_url": "https://github.com/vuejs/core/commit/1292bc491bd87c62a795475f83ad1839dccd5a0f"
+      }
+    ]
+  },
+  {
+    "sha": "1292bc491bd87c62a795475f83ad1839dccd5a0f",
+    "node_id": "C_kwDOCCum19oAKDEyOTJiYzQ5MWJkODdjNjJhNzk1NDc1ZjgzYWQxODM5ZGNjZDVhMGY",
+    "commit": {
+      "author": {
+        "name": "edison",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-11T09:30:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-05-11T09:30:45Z"
+      },
+      "message": "perf(vapor): add fast path for static class names (#14803)\n\nSpecialize simple class object and empty-string ternary bindings into flag-based setClassName calls, avoiding normalizeClass on the pure Vapor class hot path while preserving static class ordering and falling back for unsafe shapes.\n\nBrowser bench shows ~2.6x faster stable single-key ternary updates, ~9-21x faster stable single-key object updates depending on static base classes, ~30-37x faster stable multi-key object updates, and ~5-8x faster sparse multi-key churn.",
+      "tree": {
+        "sha": "44415d4459cc0db0a8e365a28f1fd864d76eb395",
+        "url": "https://api.github.com/repos/vuejs/core/git/trees/44415d4459cc0db0a8e365a28f1fd864d76eb395"
+      },
+      "url": "https://api.github.com/repos/vuejs/core/git/commits/1292bc491bd87c62a795475f83ad1839dccd5a0f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqAaHFCRC1aQ7uu5UhlAAAKj0QAAszoPdJZNbKph8rmoJUvPXM\nVHyuFANEvoMroLHMOf3b+MtVmmcRQePGTdbs9+OoRcK4a7g+kb69f8VyH0AOMDwu\n3ozBDwM8YJI0HBn8qDE5GRthxtoNkPOjd4gnkrMyhGBfWg91eNQFhPvUdeKDJJrw\nqq7nzu5DU2OeDQarsL0Egx0KLY3WySFu/d1BQMA3/fZUrrVqhKNoYA+iryCsSYNG\n9CVekhqNJizBHyX448Mka43TStKdBq0Kzn8fqXIBCHn7qnk5jxk5vty75rjOg3x/\nVUZXb/6B8EljRJ6pev28W0IFtvwDAiZ2HPsPtD7Ke+Y1CrWv64ZMQtmGWXfEpsbQ\n6+wAySxuUC9y9SgdM16ti87xlztXvKQh0HluIWUP8lPL2El9Mcbt70DZJ89WWAl6\nvKzcdtaVgaTz47wWkiLZSemwZHE/pDM9B14WQ5wpxBTfqIYVjyJuLE2u5Of2qQjM\nSM6WpFjsUu2AlhGrculT3rwqPpLYkoL3Diiaq6UOFqfFJLkrxY6qmHH9gXdHZUH1\nhmoKUPufZyppA/KvcK6CxLrLPmBjDjsb79GiPwpOOvu8A5sl2DtcQ3pntSAK4xz9\ndfsFQAqf7/9cbLF5Rqqot207rx0lsFHH1L7dX/NJZY0iiKbD+AfB3mfzEwCbqSY+\nTee9lRX2nt/nWa7Gociu\n=vxjI\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 44415d4459cc0db0a8e365a28f1fd864d76eb395\nparent 3212075f2b77612409e1cca969c18b4aae6598a0\nauthor edison <daiwei521@126.com> 1778491845 +0800\ncommitter GitHub <noreply@github.com> 1778491845 +0800\n\nperf(vapor): add fast path for static class names (#14803)\n\nSpecialize simple class object and empty-string ternary bindings into flag-based setClassName calls, avoiding normalizeClass on the pure Vapor class hot path while preserving static class ordering and falling back for unsafe shapes.\n\nBrowser bench shows ~2.6x faster stable single-key ternary updates, ~9-21x faster stable single-key object updates depending on static base classes, ~30-37x faster stable multi-key object updates, and ~5-8x faster sparse multi-key churn.",
+        "verified_at": "2026-05-11T09:30:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/vuejs/core/commits/1292bc491bd87c62a795475f83ad1839dccd5a0f",
+    "html_url": "https://github.com/vuejs/core/commit/1292bc491bd87c62a795475f83ad1839dccd5a0f",
+    "comments_url": "https://api.github.com/repos/vuejs/core/commits/1292bc491bd87c62a795475f83ad1839dccd5a0f/comments",
+    "author": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3212075f2b77612409e1cca969c18b4aae6598a0",
+        "url": "https://api.github.com/repos/vuejs/core/commits/3212075f2b77612409e1cca969c18b4aae6598a0",
+        "html_url": "https://github.com/vuejs/core/commit/3212075f2b77612409e1cca969c18b4aae6598a0"
+      }
+    ]
+  },
+  {
+    "sha": "3212075f2b77612409e1cca969c18b4aae6598a0",
+    "node_id": "C_kwDOCCum19oAKDMyMTIwNzVmMmI3NzYxMjQwOWUxY2NhOTY5YzE4YjRhYWU2NTk4YTA",
+    "commit": {
+      "author": {
+        "name": "daiwei",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-11T01:34:23Z"
+      },
+      "committer": {
+        "name": "edison",
+        "email": "daiwei521@126.com",
+        "date": "2026-05-11T02:10:13Z"
+      },
+      "message": "fix(compiler-vapor): align module field with browser esm build",
+      "tree": {
+        "sha": "fae82d6dbc4869bb0a962ddbdab7715c1e1e8b33",
+        "url": "https://api.github.com/repos/vuejs/core/git/trees/fae82d6dbc4869bb0a962ddbdab7715c1e1e8b33"
+      },
+      "url": "https://api.github.com/repos/vuejs/core/git/commits/3212075f2b77612409e1cca969c18b4aae6598a0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/vuejs/core/commits/3212075f2b77612409e1cca969c18b4aae6598a0",
+    "html_url": "https://github.com/vuejs/core/commit/3212075f2b77612409e1cca969c18b4aae6598a0",
+    "comments_url": "https://api.github.com/repos/vuejs/core/commits/3212075f2b77612409e1cca969c18b4aae6598a0/comments",
+    "author": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "edison1105",
+      "id": 3705199,
+      "node_id": "MDQ6VXNlcjM3MDUxOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3705199?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/edison1105",
+      "html_url": "https://github.com/edison1105",
+      "followers_url": "https://api.github.com/users/edison1105/followers",
+      "following_url": "https://api.github.com/users/edison1105/following{/other_user}",
+      "gists_url": "https://api.github.com/users/edison1105/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/edison1105/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/edison1105/subscriptions",
+      "organizations_url": "https://api.github.com/users/edison1105/orgs",
+      "repos_url": "https://api.github.com/users/edison1105/repos",
+      "events_url": "https://api.github.com/users/edison1105/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/edison1105/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e9866b96feae21f574c0574119048e34cb7d0751",
+        "url": "https://api.github.com/repos/vuejs/core/commits/e9866b96feae21f574c0574119048e34cb7d0751",
+        "html_url": "https://github.com/vuejs/core/commit/e9866b96feae21f574c0574119048e34cb7d0751"
+      }
+    ]
+  }
+]

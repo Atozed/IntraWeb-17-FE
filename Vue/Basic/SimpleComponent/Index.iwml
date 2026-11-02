@@ -1,0 +1,16 @@
+ACORN 1.0 IWML 1.0
+Vue.Basic.SimpleComponent.Index
+  SimpleStack
+    Text This isn’t a carbon copy of the Vue demo. The Vue version was so simple it practically tripped over its own minimalism, and ended up looking more like an IntraWeb 17 template anyway. So instead, here’s a modest custom control—built the IntraWeb 17 way, where simplicity actually does something.
+    
+    # No parameters or properties
+    SampleControl.Smiley:Smiley1
+    gap 15
+    
+    # Short form parameter syntax
+    SampleControl.Smiley:Smiley2 true
+    gap 15
+    
+    # Full syntax with properties
+    SampleControl.Smiley:Smiley3
+      IsHappy: false

@@ -1,0 +1,30 @@
+ACORN 1.0 IWML 1.0
+Features.DataBinding.Loading.Index
+  Data[]
+    Data:Vendors1
+      Text:
+        [{"ID":1, "Name":"Amazoon"}
+        ,{"ID":2, "Name":"eCray"}]
+    Data:Vendors2 Vendors2.json
+    Data:Vendors3
+  SimpleStack
+    Header 2|Dataset Loading
+    
+    Header 3|Data as text
+    List
+      DataSource: Vendors1
+      Text =*.Name
+    
+    Header 3|Data preload by URL
+    List
+      DataSource: Vendors2
+      Text =*.Name
+
+    Header 3|Data loaded by code
+    span
+      Button:ButtonVendor3Sync Load Sync
+      gap
+      Button:ButtonVendor3Async Load Async
+    List
+      DataSource: Vendors3
+      Text =*.Name

@@ -1,0 +1,14 @@
+ACORN 1.0 IWML 1.0
+Features.Index
+  SimpleStack
+    Header 2 | Features Demo
+    Gap
+    Stack Horizontal
+      SimpleStack
+        Width: 250pt
+        Header  | Menu
+        Gap
+        SimpleStack:Menu
+      ChildPage:DemoSpace
+        Width: 700pt
+    Button Button

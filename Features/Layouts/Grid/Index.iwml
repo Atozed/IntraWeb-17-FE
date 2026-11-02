@@ -1,0 +1,13 @@
+ACORN 1.0 IWML 1.0
+Features.Layouts.Grid.Index
+  GridLayout
+    Height: 100vh
+    Cols: 1fr 200px
+    Rows: 100px 1fr
+    Text Top
+      Cell.Col: 1 / -1
+      Cell.Background.Color: #ddd
+    Text Left
+      Cell.Background.Color: #bbb
+    Text Right
+      Cell.Background.Color: #999

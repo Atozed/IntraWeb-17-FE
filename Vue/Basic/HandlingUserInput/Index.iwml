@@ -1,0 +1,13 @@
+ACORN 1.0 IWML 1.0
+Vue.Basic.HandlingUserInput.Index
+  Styles[]
+    CSS
+      Text:
+        button, a {
+          Visibility: block;
+          margin-bottom: 1em;
+        }
+  Header 1|=this.Message
+  Button:ReverseButton Reverse Message
+  Button:AppendButton Append "!"
+  Link:Link1 A link with code.

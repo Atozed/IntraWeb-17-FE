@@ -1,0 +1,22 @@
+html, body{
+  background-color: lightblue;
+}
+
+#UserContainer {
+  background-color: white;
+}
+
+#UserContainer {
+  color: gray;
+  font-weight: bold;
+  padding: 15px;
+}
+
+#Username {
+  font-size: 14px;
+}
+
+#NameContainer {
+  font-size: 30px;
+  color: #222;
+}

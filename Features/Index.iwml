@@ -1,0 +1,14 @@
+ACORN 1.0 IWML 1.0
+Features.Index
+  SimpleStack
+    Header 2|Features Demo
+    gap
+    GridLayout
+      Cols: 250px 1fr
+      Gap: 8
+      SimpleStack
+        Width: 100%
+        Header 3|Menu
+        TreeList:MenuTree
+      ChildPage:DemoSpace
+        Width: 100%

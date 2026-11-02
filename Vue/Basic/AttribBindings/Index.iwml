@@ -1,0 +1,11 @@
+ACORN 1.0 IWML 1.0
+Vue.Basic.AttribBindings.Index
+  Para
+    HTML.Span
+      Title: =this.Message
+      Content: Hover your mouse over me for a few seconds to see my dynamically bound title!
+  Para
+    Text:RedText This should be red... but click me to toggle it.
+  Para
+    Text:GreenText This should be green, and should toggle between green and blue on click.
+      Color: green

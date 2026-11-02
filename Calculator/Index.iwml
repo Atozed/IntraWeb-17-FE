@@ -1,0 +1,105 @@
+ACORN 1.0 IWML 1.0
+Calculator.Index
+  SimpleStack
+    Width: 250px
+
+    SimpleStack
+      Cell.Border.Color: silver
+      Cell.Padding: 10px
+
+      Edit:Input
+        Cell.HAlign: Center
+        Width: 220px
+
+      gap
+
+      SimpleStack
+        Orientation: Horizontal
+        Cell.HAlign: Center
+
+        Button:Clear C
+          Width: 40px
+        space
+
+        Button:Backspace ⌫
+          Width: 40px
+        space
+
+        Button:Divide ÷
+          Width: 40px
+        space
+
+        Button:Multiply ×
+          Width: 40px
+        space
+
+      SimpleStack
+        Orientation: Horizontal
+        Cell.HAlign: Center
+
+        Button:Digit7 7
+          Width: 40px
+        space
+
+        Button:Digit8 8
+          Width: 40px
+        space
+
+        Button:Digit9 9
+          Width: 40px
+        space
+
+        Button:Minus -
+          Width: 40px
+        space
+
+      SimpleStack
+        Orientation: Horizontal
+        Cell.HAlign: Center
+
+        Button:Digit4 4
+          Width: 40px
+        space
+
+        Button:Digit5 5
+          Width: 40px
+        space
+
+        Button:Digit6 6
+          Width: 40px
+        space
+
+        Button:Plus +
+          Width: 40px
+        space
+
+      SimpleStack
+        Orientation: Horizontal
+        Cell.HAlign: Center
+
+        Button:Digit1 1
+          Width: 40px
+        space
+
+        Button:Digit2 2
+          Width: 40px
+        space
+
+        Button:Digit3 3
+          Width: 40px
+        space
+
+        Button:Result [off]=
+          Width: 40px
+        space
+
+      SimpleStack
+        Orientation: Horizontal
+        Cell.HAlign: Center
+
+        Button:Digit0 0
+          Width: 40px
+        space
+
+        Button:Decimal .
+          Width: 40px

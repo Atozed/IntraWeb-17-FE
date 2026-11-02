@@ -1,0 +1,19 @@
+ACORN 1.0 IWML 1.0
+Vue.Practical.MarkdownEditor.Index
+  GridLayout
+    Width: 100%
+    Height: 500
+    Cols: 50% 50%
+    Rows: 1fr
+    EditMulti:Input
+      Width: 100%
+      Height: 100%
+      Padding: 20px
+      Background.Color: #f6f6f6
+      Border.Style: none
+      FixedWidthFont: true
+      Font.Size: 14px
+      Text: # hello
+    HTML.Div:Output Two
+      Padding: 0 20px
+  

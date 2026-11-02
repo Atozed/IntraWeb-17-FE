@@ -1,0 +1,13 @@
+ACORN 1.0 IWML 1.0
+Vue.GUIs.Timer.Index
+  Text Elapsed Time:[space]
+  Progress:Progress1
+  Div
+    Text [=this.ElapsedSec]s
+  Div
+    Text Duration:[space]
+    Slider:Slider1 =this.Duration
+      Min: 1
+      Max: 30000
+    Text [=this.DurationSec]s
+  Button:ResetButton Reset

@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+  <div class="Card">
+    <h1>Book an Appointment</h1>
+    <p>Fill in the form and we will confirm your visit</p>
+
+    <div class="Fields">
+      <div class="FieldRow">
+        <span class="FieldLabel">Full Name</span>
+        <span class="FieldCtrl">{%NameEdit%}</span>
+      </div>
+      <div class="FieldRow">
+        <span class="FieldLabel">Phone</span>
+        <span class="FieldCtrl">{%PhoneEdit%}</span>
+      </div>
+      <div class="FieldRow">
+        <span class="FieldLabel">Email</span>
+        <span class="FieldCtrl">{%EmailEdit%}</span>
+      </div>
+    </div>
+
+    <div class="SectionLabel">Service</div>
+    <div class="Chips">{%ServiceGroup%}</div>
+
+    <div class="SectionLabel">Time Slot</div>
+    <div class="Chips">{%TimeGroup%}</div>
+
+    <div class="SectionLabel">Notes</div>
+    <div class="Notes">{%NotesEdit%}</div>
+
+    <div class="Summary">{%SummaryText%}</div>
+
+    <div class="Submit">{%BookButton%}</div>
+
+    <div class="Status">{%StatusText%}</div>
+
+    <div class="FrameworkBadge">IntraWeb</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "baseUrl": "file:///${workspaceFolder}/.vscode/Scripts/redirect.html",
+    "files.exclude": {
+        "**/*.js": { "when": "$(basename).ts" },
+        "**/*.gen.ts": true,
+        "**/*.js.map": true,
+        ".vscode/Scripts": true,
+        "Types": true
+    },
+
+    "//": "When basename does not work in search, so we just dont list .js",
+    "search.exclude": {
+        "**/*.gen.ts": true,
+        "**/*.js.map": true,
+        ".vscode/Scripts": true,
+        "Types": true
+    },
+
+    "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js"
+    ],
+
+    "editor.minimap.enabled": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.navigator.active": false,
+    "typescript.navigator.showVisibilityLabels": true,
+    "typescript.navigator.showIcons": true,
+        "[json]": {
+        "editor.diagnostics.suppress": [
+            "2"
+        ]
+    }
+}

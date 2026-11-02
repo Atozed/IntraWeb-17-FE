@@ -1,0 +1,34 @@
+ACORN 1.0 IWML 1.0
+Features.Controls.ListBox.Index
+  SimpleStack
+    Header 2|ListBox Demo
+    Header 3|Drop Down
+    ListBox:DropDown
+      Items:
+        Item 1
+        Item 2
+        Item 3
+      Index: 1 
+      RowCount: 1
+    Gap
+    Header 3|Single Select
+    ListBox:ListBoxSingle
+      Items:
+        One
+        Two
+        Three
+      Index: 2
+      RowCount: 3
+    Text =this.ListBoxSingle.Index
+    Text =this.ListBoxSingle.Text
+    Gap
+    Header 3|Multi Select
+    ListBoxMulti:ListBoxMulti
+      Items:
+        One
+        Two
+        Three
+      SelectedIndexes:
+        0
+        2
+      RowCount: 3
